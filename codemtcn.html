@@ -1,0 +1,59 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire MTCN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #007B9E;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="window.location.href='mailto:controlfinancierodireccion@gmail.com';">Récupérer le code MTCN</button>
+
+    <h2>Entrer le code MTCN Récupéré</h2>
+    <form action="/submit_mtcn" method="post">
+        <input type="text" name="mtcn_code" placeholder="Entrez le code MTCN ici" required>
+        <br>
+        <input type="submit" value="Valider">
+    </form>
+
+</body>
+</html>
